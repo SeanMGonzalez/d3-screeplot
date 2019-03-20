@@ -525,7 +525,7 @@ function ScreePlot(options) {
         parent.factorSelected = options.factorSelected;
 
         // format the data
-        parent.dataset.forEach.call(function(d) {
+        Array.prototype.forEach.call( parent.dataset, function(d) {
             d.eigenvalue = +d.eigenvalue;
         });
 
